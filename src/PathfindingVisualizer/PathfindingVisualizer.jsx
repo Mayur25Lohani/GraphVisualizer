@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react';
 import Node from './Node/Node';
 import {dijkstra, getNodesInShortestPathOrder} from '../algorithms/dijkstra';
 import './PathfindingVisualizer.css';
+import Navbar from '../Components/Navbar/Navbar';
 
 const START_NODE_ROW = 10;
 const START_NODE_COL = 15;
@@ -73,6 +74,7 @@ const PathfindingVisualizer = () => {
 
   return (
     <>
+      <Navbar />
       <button onClick={visualizeDijkstra}>
         Visualize Dijkstra's Algorithm
       </button>

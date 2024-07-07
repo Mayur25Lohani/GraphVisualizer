@@ -1,0 +1,55 @@
+.SortingVisualizer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.sortTitle {
+  color: #333;
+}
+#containerSort {
+  height: 200px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bar {
+  width: 25px;
+  background-color: rgb(153, 0, 255);
+  margin: 3px;
+}
+
+hr {
+  width: 25%;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .sortTitle {
+    font-size: 20px;
+  }
+
+  hr {
+    width: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .sortTitle {
+    font-size: 18px;
+  }
+
+  hr{
+    width: 90%;
+  }
+  .bar {
+    width: 20px;
+    margin: 2px;
+  }
+  .buttons {
+    flex-direction: column;
+  }
+}

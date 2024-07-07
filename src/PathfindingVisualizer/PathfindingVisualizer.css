@@ -2,11 +2,18 @@
   margin: 5px 0 0;
 }
 button {
-  font-weight: 600;
+  font-weight: 300;
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
-  background-color: rgba(0, 217, 159, 0.75);
-  color: rgba(3, 42, 94, 0.75);
+  background-color: #333;
+  color: #8ad1f1;
   font-size: 18px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+
+  /* Hover effect */
+  &:hover {
+    background-color: #ffa600; /* Darker background on hover */
+    color: #333; /* Lighter text on hover */
+  }
 }
